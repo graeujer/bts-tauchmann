@@ -1,0 +1,18 @@
+@use "../variables/" as *;
+
+.button{
+    text-decoration:none;
+    font-size:1.25rem;
+    font-weight:100;
+    color:$secondary-color;
+    padding: 0.25rem 1.25rem;
+    text-transform:uppercase;
+    font-family:"Bebas Neue";
+    letter-spacing:0.125rem;
+
+
+    &:hover{
+        background:rgb(255,255,255);
+        color:$link-hover;
+    }
+}

@@ -1,0 +1,24 @@
+$primary-color: rgb(43,59,47);
+$secondary-color:rgb(217,210,205);
+$link-hover: rgb(188,140,88);
+$text-sub: rgb(58,60,47);
+
+/*1200px oder schmaler*/
+$breakpoint-lg:75em;
+
+/*992px oder schmaler*/
+$breakpoint-md:62em;
+
+/*768px oder schmaler*/
+$breakpoint-sm:48em;
+
+/*576px oder schmaler*/
+$breakpoint-xs:36em;
+
+@media (max-width:$breakpoint-lg){}
+
+@media (max-width:$breakpoint-md){}
+
+@media (max-width:$breakpoint-sm){}
+
+@media (max-width:$breakpoint-xs){}
