@@ -1,0 +1,8 @@
+@use "../variables/" as *;
+
+.footer{
+    width:100%;
+    background:$bg__footer-header;
+    border-top:$border__footer-header;
+    height:6rem;
+}

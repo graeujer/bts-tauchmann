@@ -1,0 +1,72 @@
+@use "../variables/" as *;
+
+.offers{
+    width:100%;
+    display:flex;
+    padding-bottom:2rem;
+}
+
+.offers__content-left{
+    width:50%;
+    padding-top:5rem;
+    padding-bottom:1rem;
+    padding-left:20%;
+}
+
+.offers-heading{
+    font-size:1.5rem;
+    color:white;
+    position:relative;
+    font-family:arial;
+    font-weight:600;
+    padding-bottom:1.5rem;
+    
+    &::before{
+        content:"Angebot";
+        color:rgba(255,255,255,0.15);
+        position:absolute;
+        font-size:3.5rem;
+        left:-10rem;
+        top:-2.25rem;
+        text-transform:uppercase;
+        font-weight:700;
+
+    }
+
+}
+   
+.offers-sub{
+    color:$secondary-color;
+    padding-top:1rem;
+    font-family:arial;
+}
+
+.offers__content-right{
+    width:50%;
+    padding-left:5rem;
+    padding-top:5rem;
+}
+
+.offers__heading-skills{
+
+    color:white;
+    font-size:1.8rem;
+    
+    
+
+
+    &::after{
+        content:"";
+        width:60%;
+        height:2px;
+        display:block;
+        background-color:$link-hover;
+    }
+}
+
+.offers__heading-skills-sub{
+    color:$secondary-color;
+    padding-top:0.5rem;
+    padding-bottom:1rem;
+    font-size:1.15rem;
+}

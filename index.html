@@ -15,12 +15,12 @@
     <nav class="header__nav">
         <ul>
             <li class="header__nav-list"><a href="#about" class="button">Über uns</a></li>
-            <li class="header__nav-list"><a href="#" class="button">Portfolio</a></li>
+            <li class="header__nav-list"><a href="#portfolio" class="button">Portfolio</a></li>
         </ul>
     <img class="header__logo" src="src/images/logo.png"  alt="logo_gartenbau_diverse_werkzeuge">
         <ul>
-            <li class="header__nav-list"><a href="#" class="button">Leistungen</a></li>
-            <li class="header__nav-list"><a href="#" class="button">Kontakt</a></li>
+            <li class="header__nav-list"><a href="#leistungen" class="button">Leistungen</a></li>
+            <li class="header__nav-list"><a href="#kontakt" class="button">Kontakt</a></li>
         </ul>
     </div>
     </nav>
@@ -38,7 +38,10 @@
             <img class="header__example-img"src="src/images/abc.jpg" alt="bild mit vielen Werkzeugen" >
         </div>
         </section>
+
+        <div class="wrapper wrapper--primaryColor">
         <div class="container"> 
+            <div class="anchor" id="about"></div>
         <section class="about" >
                 <div class="about__content-left">
                     <h3 class="about__heading" id="about">Lorem Ipsum</h3>
@@ -96,40 +99,139 @@ velit quasi et odit voluptas?
                 </div>
             
         </section>
-        
+    </div>
+</div>
+
+<div class="wrapper wrapper--secondaryColor">
+    <div class="container">
+        <div class="anchor" id="portfolio"></div>
+
+        <section class="gallery" >
+
+            <!--Gallery Links-->
+            <div class="gallery__content-left">
+
+                <div class="gallery__image-left">
+                    <img class="impression" src="src/images/impressionen/images.jpg">
+                </div>
+
+                <div class="gallery__image-left">
+                    <img class="impression" src="src/images/impressionen/images (1).jpg">
+                </div>
 
 
+            </div>
 
 
+             <!--Gallery Mitte-->
+             <div class="gallery__content-middle">
+                <div class="gallery__image-middle-top">
+                    <img class="impression" src="src/images/impressionen/images (1).jpg">
+                </div>
+
+                <div class="gallery__image-middle-second">
+                    <img class="impression" src="src/images/impressionen/images (1).jpg">
+                </div>
+
+                <div class="gallery__image-middle-bottom">
+                    <img class="impression" src="src/images/impressionen/images (1).jpg">
+                </div>
+
+            </div>
 
 
+            <!--Gallery Rechts-->
+            <div class="gallery__content-right">
+                <h3 class="gallery-heading">Einige unserer bisherigeren <br>Projekte</h3>
+                <p class="gallery-sub">Onesto bea doluptatiis natiosa pitiiscia
+                    sitatur ratquaepudae eiur?
+                    Parum nusdandem int aut faceperro vel
+                    et re dendiantur, sitiur?
+                    Ga. Que quatium voluptatur sim den-
+                    dus, ullaborem atem ut fuga. Ceatia que
+                    se remodit at.</p>
 
-
-
-
-
-
-
-
-
-        <section class="form__content">
-            <form>
-                <label for="name" class="screenreader">Name</label>
-                <input type="text" id="name">
-                <label for="phone" class="screenreader">Phone</label>
-                <input type="tel" id="phone">
-                <label for="email" class="screenreader">Email</label>
-                <input type="email" id="email">
-                <textarea id="anfrage"></textarea>
-                <button>Absenden</button>
-            </form>
+                    <div class="gallery__image-right-bottom">
+                        <img class="impression" src="src/images/impressionen/images (1).jpg">
+                    </div>
+                   
+            </div>
         </section>
     </div>
 
-    
+    </div>
+
+
+    <div class="wrapper wrapper--primaryColor">
+    <div class="container">
+        <div class="anchor" id="leistungen"></div>
+        <section class="offers" >
+            <div class="offers__content-left">
+                <h3 class="offers-heading">Alles für einen schönen<br>Garten</h3>
+                <p class="offers-sub">Onesto bea doluptatiis natiosa pitiiscia
+                    sitatur ratquaepudae eiur?
+                    Parum nusdandem int aut faceperro vel
+                    et re dendiantur, sitiur?
+                    Ga. Que quatium voluptatur sim den-
+                    dus, ullaborem atem ut fuga. Ceatia que
+                    se remodit at.</p>
+            </div>
+            <div class="offers__content-right">
+
+                <h2 class="offers__heading-skills">Wixxen</h2>
+                <p class="offers__heading-skills-sub">
+                    Parum nusdandem int aut faceperro vel
+                </p>
+
+                <h2 class="offers__heading-skills">Wixxen</h2>
+                <p class="offers__heading-skills-sub">
+                    Parum nusdandem int aut faceperro vel
+                </p>
+
+                <h2 class="offers__heading-skills">Wixxen</h2>
+                <p class="offers__heading-skills-sub">
+                    Parum nusdandem int aut faceperro vel
+                </p>
+
+                <h2 class="offers__heading-skills">Wixxen</h2>
+                <p class="offers__heading-skills-sub">
+                    Parum nusdandem int aut faceperro vel
+                </p>
+
+            </div>
+        </section>
+        
+    </div>
+    </div>
+
+
+
+
+    <div class="wrapper wrapper--secondaryColor">
+        <div class="container">
+            <div class="anchor" id="kontakt"></div>
+        <section class="contact" >
+            <h3 class="contact__heading">Interessiert ? </h3>
+
+            <form class="contact__form">  
+                <label for="firma" class="screenreader">Firma</label>
+                <input type="text" id="firma" placeholder="Firma...">
+                <label for="name" class="screenreader">Name</label>
+                <input type="text" id="name" required placeholder="Name..."><br>
+                <label for="phone" class="screenreader">Phone</label>
+                <input type="tel" id="phone" placeholder="Telefon...">
+                <label for="email" class="screenreader">Email</label>
+                <input type="email" id="email" required placeholder="E-Mail..."><br>
+                <textarea id="anfrage" required placeholder="Gerne könnne Sie uns hier Ihre Anfrage stellen..." ></textarea><br>
+                <button >Absenden</button>
+            </form>
+        </section>
+
+    </div>
+    </div>
 </main>
 <footer class="footer">
-
+    
 </footer>
 
 

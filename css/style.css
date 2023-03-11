@@ -9,8 +9,10 @@
   top: 0;
   right: 0;
   left: 0;
-  background: rgb(43, 59, 47);
+  background: rgb(29, 42, 34);
   z-index: 9999;
+  box-shadow: 0 0 1px black;
+  border-bottom: 7px solid rgb(188, 140, 88);
 }
 
 .header__logo {
@@ -79,10 +81,11 @@
 
 .about {
   width: 100%;
-  height: 50rem;
   background: rgb(43, 59, 47);
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+  margin-top: -1rem;
 }
 
 .about__content-left {
@@ -104,7 +107,7 @@
   font-family: arial;
   font-weight: 600;
 }
-.about__heading:before {
+.about__heading::before {
   content: "Über uns";
   color: rgba(255, 255, 255, 0.15);
   position: absolute;
@@ -147,7 +150,8 @@
 .about__skills-heading {
   color: rgb(217, 210, 205);
   padding-left: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
+  font-weight: lighter;
   font-family: arial;
 }
 
@@ -157,12 +161,269 @@
   padding: 0.5rem;
 }
 
+.footer {
+  width: 100%;
+  background: rgb(29, 42, 34);
+  border-top: 7px solid rgb(188, 140, 88);
+  height: 6rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(217, 210, 205);
+  width: 100%;
+  padding-top: 8rem;
+}
+
+.gallery__content-left {
+  flex: 0 0 15.3rem;
+}
+
+.gallery__content-middle {
+  flex: 0 0 25rem;
+}
+
+.gallery__content-right {
+  flex: 0 0 20rem;
+  z-index: 1;
+  padding-right: 1;
+  padding-left: 7rem;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.gallery-heading {
+  font-size: 1.5rem;
+  color: rgb(43, 59, 47);
+  position: relative;
+  font-family: arial;
+  font-weight: 600;
+}
+.gallery-heading::before {
+  content: "Einblicke";
+  color: rgba(43, 59, 47, 0.15);
+  position: absolute;
+  font-size: 3.5rem;
+  left: -4.5rem;
+  top: -2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: -1;
+}
+
+.gallery-sub {
+  color: rgb(43, 59, 47);
+  width: 18rem;
+  padding-top: 0.75rem;
+  font-size: 1.15rem;
+  font-family: arial;
+  padding-bottom: 2rem;
+}
+
+.gallery__image-left {
+  outline: solid 5.5px rgb(188, 140, 88);
+  margin-bottom: 1.3rem;
+  width: 14rem;
+  height: 20rem;
+}
+
+.gallery__image-middle-top {
+  outline: solid 5.5px rgb(188, 140, 88);
+  margin-bottom: 1.3rem;
+  width: 26rem;
+  height: 14em;
+}
+
+.gallery__image-middle-second {
+  outline: solid 5.5px rgb(188, 140, 88);
+  margin-bottom: 1.3rem;
+  width: 20rem;
+  height: 24em;
+}
+
+.gallery__image-middle-bottom {
+  outline: solid 5.5px rgb(188, 140, 88);
+  margin-bottom: 2rem;
+  width: 20rem;
+  height: 10em;
+}
+
+.gallery__image-right-bottom {
+  outline: solid 5.5px rgb(188, 140, 88);
+  margin-bottom: 2rem;
+  width: 30rem;
+  height: 20em;
+  position: absolute;
+  left: -4.7rem;
+}
+
+.impression {
+  width: 100%;
+  height: 100%;
+}
+
+.offers {
+  width: 100%;
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.offers__content-left {
+  width: 50%;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  padding-left: 20%;
+}
+
+.offers-heading {
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  font-family: arial;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.offers-heading::before {
+  content: "Angebot";
+  color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  font-size: 3.5rem;
+  left: -10rem;
+  top: -2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.offers-sub {
+  color: rgb(217, 210, 205);
+  padding-top: 1rem;
+  font-family: arial;
+}
+
+.offers__content-right {
+  width: 50%;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+
+.offers__heading-skills {
+  color: white;
+  font-size: 1.8rem;
+}
+.offers__heading-skills::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  display: block;
+  background-color: rgb(188, 140, 88);
+}
+
+.offers__heading-skills-sub {
+  color: rgb(217, 210, 205);
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.15rem;
+}
+
+.contact {
+  width: 100%;
+  padding-top: 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact__heading {
+  font-size: 1.8rem;
+  color: rgb(43, 59, 47);
+  position: relative;
+  text-align: center;
+  font-family: arial;
+  padding-bottom: 3rem;
+}
+.contact__heading::before {
+  content: "Kontakt";
+  display: block;
+  color: rgba(43, 59, 47, 0.15);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -2.5rem;
+  z-index: -30;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contact__form {
+  text-align: center;
+}
+
+input {
+  width: 20rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: 3px solid rgb(188, 140, 88);
+  font-family: arial;
+  margin: 0.5rem;
+}
+
+input:focus {
+  border: 3px solid transparent;
+  outline: 1.5px solid rgb(43, 59, 47);
+}
+
+textarea {
+  width: 41rem;
+  height: 20rem;
+  margin-top: 0.5rem;
+  resize: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: 3px solid rgb(188, 140, 88);
+  font-family: arial;
+}
+textarea:focus {
+  border: 3px solid transparent;
+  outline: 1.5px solid rgb(43, 59, 47);
+}
+
+button {
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: rgb(188, 140, 88);
+  font-size: 1.15rem;
+  font-weight: bold;
+  outline: none;
+  border: 3px solid rgb(188, 140, 88);
+  border-radius: 10px;
+}
+button:hover {
+  border: 3px solid transparent;
+  outline: 1.5px solid rgb(43, 59, 47);
+  text-shadow: 0 0 1px rgb(43, 59, 47);
+  cursor: pointer;
+}
+
 .container {
   max-width: 75rem;
   margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
 }
-.container--bg {
-  background: rgb(43, 59, 47);
+
+.wrapper {
+  width: 100%;
+}
+.wrapper--primaryColor {
+  background-color: rgb(43, 59, 47);
+}
+.wrapper--secondaryColor {
+  background-color: rgb(217, 210, 205);
 }
 
 .button {
@@ -184,15 +445,16 @@
   display: none;
 }
 
+.anchor {
+  position: absolute;
+  top: -6rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
-}
-
-body {
-  background: rgb(43, 59, 47);
 }
 
 /*# sourceMappingURL=style.css.map */

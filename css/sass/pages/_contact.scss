@@ -1,0 +1,94 @@
+@use "../variables/" as *;
+
+.contact{
+    width:100%;
+    padding-top:5rem;
+    position:relative;
+    z-index:1;
+}
+
+.contact__heading{
+    font-size:1.8rem;
+    color:$primary-color;
+    position:relative;
+    text-align:center;
+    font-family:arial;
+    padding-bottom:3rem;
+
+    &::before{
+        content:"Kontakt";
+        display:block;
+        color:rgba(43,59,47, 0.15);
+        text-align: center;
+        position:absolute;
+        left:0;
+        right:0;
+        top:-2.5rem;
+        z-index:-30;
+        font-size:3.5rem;
+        text-transform:uppercase;
+        font-weight:700;
+
+        
+        
+    }
+}
+
+.contact__form{
+    text-align:center;
+}
+
+input{
+    width:20rem;
+    padding:0.5rem;
+    border-radius:10px;
+    outline:none;
+    border:$input-border;
+    font-family:arial;
+    margin:0.5rem;
+}
+
+input:focus{
+    border:$input-border-transparent;
+    outline:1.5px solid $primary-color;
+}
+
+textarea{
+    width:41rem;
+    height:20rem;
+    margin-top:0.5rem;
+    resize:none;
+    padding:0.5rem;
+    border-radius:10px;
+    outline:none; 
+    border:$input-border;
+    font-family: arial;
+
+    &:focus{
+        border:$input-border-transparent;
+    outline:1.5px solid $primary-color;
+    }
+
+}
+
+button{
+    padding:0.5rem 2rem;
+    margin-top:1rem;
+    margin-bottom:2rem;
+    color:$link-hover;
+    font-size:1.15rem;
+    font-weight:bold;
+    outline:none;
+    border:$input-border;
+    border-radius:10px;
+   
+    
+
+
+    &:hover{
+        border:$input-border-transparent;
+        outline:1.5px solid $primary-color;
+        text-shadow: 0 0 1px $primary-color;
+        cursor:pointer;
+    }
+}

@@ -1,7 +1,22 @@
+// Globale Farben
+
 $primary-color: rgb(43,59,47);
 $secondary-color:rgb(217,210,205);
 $link-hover: rgb(188,140,88);
 $text-sub: rgb(58,60,47);
+
+
+// Formular
+
+$input-border: 3px solid $link-hover;
+$input-border-transparent:3px solid transparent;
+
+
+//Footer Header
+$border__footer-header:7px solid $link-hover;
+$bg__footer-header:rgb(29,42,34);
+
+
 
 /*1200px oder schmaler*/
 $breakpoint-lg:75em;

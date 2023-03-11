@@ -1,4 +1,5 @@
 @use "../variables/" as *;
+@use "sass:color";
 
 .header{
     
@@ -7,8 +8,12 @@
     top:0;
     right:0;
     left:0;
-    background:$primary-color;
+    background: $bg__footer-header;
     z-index:9999;
+    box-shadow:0 0 1px black;
+    border-bottom: $border__footer-header;
+
+    
     
 }
 
