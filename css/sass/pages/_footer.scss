@@ -1,8 +1,39 @@
 @use "../variables/" as *;
+@use "sass:color";
 
 .footer{
     width:100%;
     background:$bg__footer-header;
     border-top:$border__footer-header;
     height:6rem;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.footer__content-left{
+    width:50%;
+}
+
+.footer__content-right{
+    width:50%;
+    display:flex;
+    align-items:center;
+}
+
+.footer__list{
+    list-style-type:none;
+    padding:2rem;
+}
+
+.footer__list-link{
+    text-decoration:none;
+    font-size:1.25rem;
+    color:$link-hover;
+    padding:0.5rem 1rem;
+    font-family:"Bebas Neue";
+    letter-spacing:0.125rem;
+
+    &:hover{
+        color: color.adjust($link-hover, $lightness:20);
+    }
 }
