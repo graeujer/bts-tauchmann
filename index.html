@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ihr Landschafts Fachbetrieb">
+    <meta name="theme-color" content="rgb(29,42,34)">
+
     <link rel="stylesheet" href="src/fonts/BebasNeue/bebasneue.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Gartenbau</title>
+    <title>BTS-Gartenbau</title>
 </head>
 <body>
    
 <header class="header">
     <div class="container container--header">
     <nav class="header__nav">
-        <ul>
+        <ul class="header__ul-desktop">
             <li class="header__nav-list"><a href="#about" class="button">Über uns</a></li>
             <li class="header__nav-list"><a href="#portfolio" class="button">Portfolio</a></li>
-        </ul>
-    <img class="header__logo" src="src/images/logo.png"  alt="logo_gartenbau_diverse_werkzeuge">
-        <ul>
+            <li> <a href="index.html">
+                <img class="header__logo" src="src/images/logo.png"  alt="logo_gartenbau_diverse_werkzeuge"></a></li>
             <li class="header__nav-list"><a href="#leistungen" class="button">Leistungen</a></li>
             <li class="header__nav-list"><a href="#kontakt" class="button">Kontakt</a></li>
         </ul>
     </div>
+    </nav>
+
+    <nav class="header__nav--mobile">
+    
+    <a href="index.html">
+<img class="header__logo--mobile" src="src/images/logo.png"  alt="logo_gartenbau_diverse_werkzeuge"></a>
+    
+    <input type="checkbox" id="navi" autocomplete="off">   
+    <label for="navi">
+        <div class="nav__mobile-icon" >&equiv;</div>
+    </label>
+    
+        <div class="nav__mobile-wrapper">
+            <label for="navi" class="button__close">X</label>
+         
+        <ul>            
+            <li class="header__nav-list--mobile"><a href="#about" class="button button--mobile">Über uns</a></li>
+            <li class="header__nav-list--mobile"><a href="#portfolio" class="button button--mobile">Portfolio</a></li>
+            <li class="header__nav-list--mobile"><a href="#leistungen" class="button button--mobile">Leistungen</a></li>
+            <li class="header__nav-list--mobile"><a href="#kontakt" class="button button--mobile">Kontakt</a></li>
+        </ul>
+    </div>
+    
     </nav>
     
 </header>
@@ -130,11 +155,15 @@ velit quasi et odit voluptas?
                 </div>
 
                 <div class="gallery__image-middle-second">
+                    <picture>
                     <img class="impression" src="src/images/impressionen/images (1).jpg">
+                     </picture>
                 </div>
 
                 <div class="gallery__image-middle-bottom">
+                    <picture>
                     <img class="impression" src="src/images/impressionen/images (1).jpg">
+                    </picture>
                 </div>
 
             </div>
@@ -152,7 +181,9 @@ velit quasi et odit voluptas?
                     se remodit at.</p>
 
                     <div class="gallery__image-right-bottom">
+                        <picture>
                         <img class="impression" src="src/images/impressionen/images (1).jpg">
+                         </picture>
                     </div>
                    
             </div>
@@ -178,22 +209,22 @@ velit quasi et odit voluptas?
             </div>
             <div class="offers__content-right">
 
-                <h2 class="offers__heading-skills">Wixxen</h2>
+                <h2 class="offers__heading-skills">Text1</h2>
                 <p class="offers__heading-skills-sub">
                     Parum nusdandem int aut faceperro vel
                 </p>
 
-                <h2 class="offers__heading-skills">Wixxen</h2>
+                <h2 class="offers__heading-skills">Text2</h2>
                 <p class="offers__heading-skills-sub">
                     Parum nusdandem int aut faceperro vel
                 </p>
 
-                <h2 class="offers__heading-skills">Wixxen</h2>
+                <h2 class="offers__heading-skills">Text3</h2>
                 <p class="offers__heading-skills-sub">
                     Parum nusdandem int aut faceperro vel
                 </p>
 
-                <h2 class="offers__heading-skills">Wixxen</h2>
+                <h2 class="offers__heading-skills">Text4</h2>
                 <p class="offers__heading-skills-sub">
                     Parum nusdandem int aut faceperro vel
                 </p>
@@ -233,8 +264,8 @@ velit quasi et odit voluptas?
 <footer class="footer">
     <div class="footer__content-left"></div>
     <div class="footer__content-right">
-    <ul>
-        <li class="footer__list"><a href="#" class="footer__list-link">Impressum</a></li>
+    <ul class="footer__ul">
+        <li class="footer__list"><a href="impressum.html" class="footer__list-link">Impressum</a></li>
         <li class="footer__list"><a href="#" class="footer__list-link">Datenschutz</a></li>
     </ul>
 </div>

@@ -10,12 +10,13 @@
     font-family:"Bebas Neue";
     letter-spacing:0.125rem;
 
-
+    &--mobile{
+      
+    }
     &:hover{
         background:rgb(255,255,255);
         color:$link-hover;
         transition: 0.25s all linear;
-    }
-
-   
+    }   
 }
+

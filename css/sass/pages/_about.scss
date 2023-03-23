@@ -15,13 +15,35 @@
     width:50%;
     padding-left:20%;
     padding-top:5rem;
+
+    @media(max-width:$breakpoint-md){
+        width:100%;
+        padding-right:3rem;
+    }
+
+    @media(max-width:$breakpoint-xs){
+       padding:5rem 1rem 2rem 1rem
+     }
+
 }
 
 .about__content-right{
     width:50%;
     padding-top:4rem;
     padding-left:5rem;
+
+    @media(max-width:$breakpoint-md){
+        width:100%;
+        
+    }
+
+    @media(max-width:$breakpoint-xs){
+        padding:1rem 1rem 2rem 1rem;
+     }
+   
 }
+
+
 
 .about__heading{
     font-size:1.5rem;
@@ -39,6 +61,12 @@
         top:-2.25rem;
         text-transform:uppercase;
         font-weight:700;
+
+        @media(max-width:$breakpoint-xs){
+            left:-1rem;
+            right:1rem;
+            top:-2.75rem;
+         }
 
         
 

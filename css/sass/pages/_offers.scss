@@ -4,6 +4,7 @@
     width:100%;
     display:flex;
     padding-bottom:2rem;
+    flex-wrap:wrap;
 }
 
 .offers__content-left{
@@ -11,6 +12,16 @@
     padding-top:5rem;
     padding-bottom:1rem;
     padding-left:20%;
+
+    @media(max-width:$breakpoint-lg){
+        width:100%;
+        padding:5rem 1rem 2rem 10rem;
+    }
+
+    @media(max-width:$breakpoint-xs){
+        width:100%;
+        padding:5rem 1rem 1rem 1rem;
+    }
 }
 
 .offers-heading{
@@ -31,6 +42,12 @@
         text-transform:uppercase;
         font-weight:700;
 
+        @media(max-width:$breakpoint-xs){
+           left:-1rem;
+           right:1rem;
+           top:-2.75rem;
+        }
+
     }
 
 }
@@ -45,19 +62,26 @@
     width:50%;
     padding-left:5rem;
     padding-top:5rem;
+
+    @media(max-width:$breakpoint-lg){
+        width:100%;
+        justify-content:center;
+    }
+
+    @media(max-width:$breakpoint-xs){
+        padding:2rem 1rem;
+     }
 }
 
 .offers__heading-skills{
 
     color:white;
     font-size:1.8rem;
-    
-    
-
 
     &::after{
         content:"";
         width:60%;
+        max-width:5rem;
         height:2px;
         display:block;
         background-color:$link-hover;

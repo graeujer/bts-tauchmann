@@ -46,6 +46,11 @@ input{
     border:$input-border;
     font-family:arial;
     margin:0.5rem;
+
+    @media(max-width:$breakpoint-sm){
+        width:80%;
+        min-width:10rem;
+    }
 }
 
 input:focus{
@@ -64,11 +69,16 @@ textarea{
     border:$input-border;
     font-family: arial;
 
+    @media(max-width:$breakpoint-sm){
+        width:80%;
+        min-width:20rem;
+    }
+
     &:focus{
         border:$input-border-transparent;
     outline:1.5px solid $primary-color;
     }
-
+   
 }
 
 button{

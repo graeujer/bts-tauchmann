@@ -9,26 +9,59 @@
     background-color:$secondary-color;
     width:100%;
     padding-top:8rem;
+
+    @media(max-width:$breakpoint-xs){
+        padding-top:4rem;
+     }
 }
 
 .gallery__content-left{
     flex:0 0 15.3rem;
+
+    @media(max-width:$breakpoint-lg){
+        order:3;
+        margin-left:2rem;
+    }
+    @media(max-width:$breakpoint-sm){
+        flex:0 0 100%;
+        margin-left:0;
+        padding:0 1rem;
+    }
    
     
 }
 
 .gallery__content-middle{
     flex:0 0 25rem;
+    @media(max-width:$breakpoint-lg){
+        order:2;
+    }
+
+    @media(max-width:$breakpoint-sm){
+        flex:0 0 100%;
+        padding:0
+    }
     
 }
 
 .gallery__content-right{
-    flex:0 0 20rem;
+    flex:0 1 20rem;
     z-index:1;
-    padding-right:1;
+    padding-right:1rem;
     padding-left:7rem;
     padding-top:1rem;
     position:relative;
+    @media(max-width:$breakpoint-lg){
+        order:1;
+    }
+
+    @media(max-width:$breakpoint-sm){
+        flex:0 0 100%;
+    }
+
+    @media(max-width:$breakpoint-xs){
+       padding:2rem 1rem 1rem 1rem;
+     }
 }
 
 .gallery-heading{
@@ -37,6 +70,8 @@
     position:relative;
     font-family:arial;
     font-weight:600;
+
+    
 
     &::before{
         content:"Einblicke";
@@ -48,6 +83,12 @@
         text-transform:uppercase;
         font-weight:700;
         z-index:-1;
+
+        @media(max-width:$breakpoint-xs){
+            left:-1rem;
+            right:1rem;
+            top:-2.75rem;
+         }
     }
 }
 
@@ -58,54 +99,58 @@
     font-size:1.15rem;
     font-family:arial;
     padding-bottom:2rem;
-    // position:relative;
     
-
-    // &::after{
-    //     content:"";
-    //     display:block;
-    //     position:absolute;
-    //     width:30rem;
-    //     height:20rem;
-    //     left:-4rem;
-    //     margin-top:2rem;
-        
-    //     background-image:url("../src/images/impressionen/images\ \(1\).jpg");
-    //     background-repeat:no-repeat;
-    //     background-size:cover;
-
-    //     outline:solid 5.5px $link-hover; 
-
-    // }
 }
 
 .gallery__image-left{
     outline:solid 5.5px $link-hover; 
     margin-bottom:1.3rem;
-    width:14rem;
+    width:92.5%;
     height:20rem;
+    @media(max-width:$breakpoint-sm){
+        width:100%;
+    }
     
 }
 
 .gallery__image-middle-top{
     outline:solid 5.5px $link-hover; 
     margin-bottom:1.3rem;
-    width:26rem;
+    width:100%;
     height:14em;
+    @media(max-width:$breakpoint-sm){
+        width:100%;
+    }
 }
 
 .gallery__image-middle-second{
     outline:solid 5.5px $link-hover; 
     margin-bottom:1.3rem;
-    width:20rem;
+    width:77%;
     height:24em;
+
+    @media(max-width:$breakpoint-lg){
+        width:100%;
+    }
+
+    @media(max-width:$breakpoint-sm){
+        width:100%;
+    }
 }
 
 .gallery__image-middle-bottom{
     outline:solid 5.5px $link-hover; 
     margin-bottom:2rem;
-    width:20rem;
+    width:77%;
     height:10em;
+
+    @media(max-width:$breakpoint-lg){
+        width:100%;
+    }
+
+    @media(max-width:$breakpoint-sm){
+        width:100%;
+    }
 }
 
 .gallery__image-right-bottom{
@@ -115,9 +160,24 @@
     height:20em;
     position:absolute;
     left:-4.7rem;
+    
+
+    @media(max-width:$breakpoint-lg){
+        position:relative;
+    }
+
+    @media(max-width:$breakpoint-sm){
+        width:100%;
+        left:0;
+    }
 }
 
 .impression{
     width:100%;
     height:100%;
+}
+
+.gallery img:hover {
+    transform:scale(1.1);
+    transition:0.3s all ease-in-out;
 }
